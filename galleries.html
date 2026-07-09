@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galleries</title>
+</head>
+
+<style>
+    .logodiv {
+        background-image: url(image/galleriesbg.jpg);
+        background-size: cover;
+        width: auto;
+        height: 336px;
+    }
+
+    .con {
+        transform: translateY(+50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+
+    }
+
+    .lo {
+        color: white;
+        text-decoration: none;
+        font-style: italic;
+        font-family: "Playfair Display", serif;
+        opacity: 50%;
+        font-size: 20px;
+    }
+
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+
+    .link {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .link:hover {
+        color: darkgoldenrod;
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    .lo:hover {
+        color: darkgoldenrod;
+    }
+
+    .list {
+        transform: translateY(100px);
+
+    }
+
+    .head {
+
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 50px;
+        width: 333px;
+        height: 108px;
+
+    }
+
+
+    .menu-list {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+
+    .item {
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .item:hover {
+        color: darkgoldenrod;
+
+
+    }
+
+
+
+    .menu {
+        position: sticky;
+        top: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+
+
+
+    .gallery {
+        width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 25px;
+        row-gap: 35px;
+    }
+
+    .mitem img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .mitem p {
+        margin-top: 10px;
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+        color: #333;
+
+    }
+
+    .mitem {
+        transition: 0.3s;
+    }
+
+    .mitem:hover {
+        transform: translateY(-5px);
+    }
+
+    .mitem:hover img {
+        opacity: .85;
+    }
+
+     footer {
+        height: 416px;
+        background: #efe3d2;
+        padding: 40px 80px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .footer-box h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+
+    }
+
+    .footer-box p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 18px;
+        color: #666;
+    }
+
+    .contact i {
+        color: #666;
+        font-size: 22px;
+        margin-top: 2px;
+    }
+
+    .contact span {
+        line-height: 1.6;
+    }
+
+    .footer-box ul {
+        list-style: none;
+    }
+
+    .footer-box ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-box ul li a {
+        text-decoration: none;
+        color: #666;
+        transition: .3s;
+    }
+
+    .footer-box ul li a:hover {
+        color: #000;
+    }
+
+    .footer-box input {
+        width: 100%;
+        height: 42px;
+        margin-bottom: 12px;
+        border: 1px solid #d5c8b7;
+        background: transparent;
+        padding-left: 12px;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .footer-box button {
+        background: #000;
+        color: #fff;
+        border: none;
+        padding: 12px 22px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: .3s;
+    }
+
+    .footer-box button:hover {
+        background: #333;
+    }
+
+    .social {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social a {
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+
+    }
+
+    .google {
+        height: 40px;
+    }
+
+    .wifi {
+        transform: rotate(45deg);
+    }
+</style>
+
+<body>
+    <div class="logodiv">
+
+        <div>
+            <section class="move">
+                <div class="con">
+                    <section>
+                        <a class="lo" href=""> Find </a>
+                        <a class="lo" href=""> / Contacts</a>
+                    </section>
+
+                    <a href=""> <img src="image/logo.png" alt=""></a>
+
+                    <section class="ho">
+                        <a class="lo" href=""> Login / </a>
+                        <a class="lo" href=""> Register</a>
+                    </section>
+            </section>
+        </div>
+
+        <div class="list">
+            <ul class="nav-list">
+                <li><a class="link" href="index.html">HOME</a></li>
+                <li><a class="link" href="about.html">ABOUT</a></li>
+                <li><a class="link" href="menu.html">MENU</a></li>
+                <li><a class="link" href="galleries.html">GALLERIES</a></li>
+                <li><a class="link" href="event.html">NEWS & EVENTS</a></li>
+                <li><a class="link" href="contact.html">CONTACTS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <ul class="menu-list">
+            <li><a class="item" href="#cake-menu">ALL</a></li>
+            <li><a class="item" href="#coffee-menu">COFFEE</a></li>
+            <li><a class="item" href="#milk-menu">MILK</a></li>
+            <li><a class="item" href="#cocktail-menu">COCKTAILS</a></li>
+            <li><a class="item" href="#beverages-menu">BEVERAGES</a></li>
+            <li><a class="item" href="#tea-menu">TEA</a></li>
+
+        </ul>
+    </div>
+    <!-- main -->
+    <div class="gallery">
+
+        <div class="mitem">
+            <img src="image/j1.jpg" alt="">
+            <p>CONSECTETUR ADIPISICING ELIT</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j2.jpg" alt="">
+            <p>JUSTO EUISMOD FAUCIBUS ELEIFEND</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j3.jpg" alt="">
+            <p>INVENTORE VERITATIS QUASI</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j4.jpg" alt="">
+            <p>VOLUPTATEM SEQUI NESCIUNT</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j5.jpg" alt="">
+            <p>JUSTO EUISMOD FAUCIBUS ELEIFEND</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j6.jpg" alt="">
+            <p>PERSPICIATIS UNDE OMNIS</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j7.jpg" alt="">
+            <p>OMNIS ISTE NATUS ERROR</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j8.jpg" alt="">
+            <p>EAQUE IPSA QUAE</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j9.jpg" alt="">
+            <p>QUAS ARCHITECTO BEATAE</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j10.jpg" alt="">
+            <p>MAGNI DOLORES EOS</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j11.jpg" alt="">
+            <p>ASPERNATUR AUT ODIT AUT</p>
+        </div>
+
+        <div class="mitem">
+            <img src="image/j12.jpg" alt="">
+            <p>RATIONE VOLUPTATEM</p>
+        </div>
+
+    </div>
+
+     <!-- footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-box">
+                <h2>ABOUT US</h2>
+
+                <p>
+                    Anim pariatur cliche reprehenderit,
+                    enim eiusmod high life accusamus terry
+                    richardson ad squid.
+                </p>
+
+                <div class="contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <img src="image/icons8-mail-24.png" alt="">
+                    <span>hello@mtheme.org</span>
+                </div>
+
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <img src="image/icons8-phone-30.png" alt="">
+                    <span>+(84)123456789</span>
+                </div>
+
+                <div class="contact">
+                    <i class="fa-solid fa-house"></i>
+                    <img src="image/icons8-home-30.png" alt="">
+                    <span>
+                        198 West 21th Street, Suite 721<br>
+                        New York NY 10010
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Business -->
+
+            <div class="footer-box">
+
+                <h2>FOR BUSINESS</h2>
+
+                <ul>
+                    <li><a href="#">Office Coffee</a></li>
+                    <li><a href="#">Food Service</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Newsletter -->
+
+            <div class="footer-box">
+
+                <h2>NEWSLETTER</h2>
+
+                <p>
+                    If you world like sign-up to the origin
+                    newsletter,please enter your email
+                    address below
+                </p>
+
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+
+                <button>SUBSCRIBE</button>
+
+            </div>
+
+            <!-- Social -->
+
+            <div class="footer-box">
+
+                <h2>FOLLOW US</h2>
+
+                <p>
+                    Follow Origin on the following social
+                    network sites.
+                </p>
+
+                <div class="social">
+
+                    <a href="#"><i class="fab fa-facebook-f"> <img src="image/icons8-facebook-30.png" alt=""></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"> <img src="image/icons8-twitter-bird-30.png" alt=""></i></a>
+
+                    <a href="#"><i class="fab fa-google-plus-g"> <img class="google"
+                                src="image/icons8-google-plus-50.png" alt=""></i></a>
+
+                    <a href="#"><i class="fas fa-rss"></i> <img class="wifi" src="image/icons8-wifi-30.png" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

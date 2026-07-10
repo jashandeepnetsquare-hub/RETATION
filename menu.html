@@ -63,7 +63,7 @@
 
     .link:hover {
         color: darkgoldenrod;
-        font-size: 20px;
+
         transition: 1s;
     }
 
@@ -105,13 +105,121 @@
 
 
 
-    .menu {position: sticky;
-        top:   0 ;
+    .menu {
+        position: sticky;
+        top: 0;
         padding-top: 30px;
         padding-bottom: 20px;
         background-color: white;
     }
 
+    #coffee-menu {
+        animation: moveBox 3s;
+    }
+
+    @keyframes moveBox {
+
+        0% {
+            transform: translateX(-200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+    #milk-menu {
+        animation: moveBox2 3s;
+    }
+
+    @keyframes moveBox2 {
+
+        0% {
+            transform: translateX(0200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+    #cocktail-menu {
+        animation: moveBox3 3s;
+    }
+
+    @keyframes moveBox3 {
+
+        0% {
+            transform: translateX(-200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+    #beverages-menu {
+        animation: moveBox4 3s;
+    }
+
+    @keyframes moveBox4 {
+
+        0% {
+            transform: translateX(0200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+    #tea-menu {
+        animation: moveBox5 3s;
+    }
+
+    @keyframes moveBox5 {
+
+        0% {
+            transform: translateX(-200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+    #cake-menu {
+        animation: moveBox6 3s;
+    }
+
+    @keyframes moveBox6 {
+
+        0% {
+            transform: translateX(200px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
 
     #coffee-menu {
 
@@ -508,80 +616,81 @@
 
 
 
-    #cake-menu{
-    width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:80px 0;
-}
+    #cake-menu {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0;
+    }
 
-.caleft{
-    width:48%;
-}
+    .caleft {
+        width: 48%;
+    }
 
-.caright{
-    width:48%;
-    text-align:center;
-}
+    .caright {
+        width: 48%;
+        text-align: center;
+    }
 
-.caright h1{
-    font-size:55px;
-    font-weight:700;
-    margin-bottom:30px;
-}
+    .caright h1 {
+        font-size: 55px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
 
-.camain-image{
-    width:100%;
-    max-width:520px;
-}
+    .camain-image {
+        width: 100%;
+        max-width: 520px;
+    }
 
-.cake-item{
-    display:flex;
-    gap:20px;
-    margin-bottom:35px;
-}
+    .cake-item {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
 
-.cake-item img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-}
+    .cake-item img {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+    }
 
-.cacontent{
-    width:100%;
-}
+    .cacontent {
+        width: 100%;
+    }
 
-.catitle{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
+    .catitle {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-.catitle h3{
-    margin:0;
-    font-size:16px;
-    white-space:nowrap;
-}
+    .catitle h3 {
+        margin: 0;
+        font-size: 16px;
+        white-space: nowrap;
+    }
 
-.caline{
-    flex:1;
-    border-bottom:2px dotted #666;
-}
+    .caline {
+        flex: 1;
+        border-bottom: 2px dotted #666;
+    }
 
-.caprice{
-    font-weight:bold;
-    white-space:nowrap;
-}
+    .caprice {
+        font-weight: bold;
+        white-space: nowrap;
+    }
 
-.cacontent p{
-    margin-top:10px;
-    color:#666;
-    line-height:1.7;
-    font-size:14px;
-}
-  footer {
+    .cacontent p {
+        margin-top: 10px;
+        color: #666;
+        line-height: 1.7;
+        font-size: 14px;
+    }
+
+    footer {
         height: 416px;
         background: #efe3d2;
         padding: 40px 80px;
@@ -1286,112 +1395,112 @@
 
     </section>
 
-<!-- cake -->
+    <!-- cake -->
 
 
-<section id="cake-menu">
+    <section id="cake-menu">
 
-    <!-- LEFT SIDE -->
+        <!-- LEFT SIDE -->
 
-    <div class="caleft">
+        <div class="caleft">
 
-        <div class="cake-item">
+            <div class="cake-item">
 
-            <img src="image/cake-1.png" alt="">
+                <img src="image/cake-1.png" alt="">
 
-            <div class="cacontent">
+                <div class="cacontent">
 
-                <div class="catitle">
-                    <h3>CAKES COCOA</h3>
-                    <span class="caline"></span>
-                    <span class="caprice">$33.00</span>
+                    <div class="catitle">
+                        <h3>CAKES COCOA</h3>
+                        <span class="caline"></span>
+                        <span class="caprice">$33.00</span>
+                    </div>
+
+                    <p>
+                        Indispensable for lovers of coffee tiramisu dessert.
+                        Special cake with cream and cocoa, powder lovers the choice
+                        of mild, sweet.
+                    </p>
+
                 </div>
 
-                <p>
-                    Indispensable for lovers of coffee tiramisu dessert.
-                    Special cake with cream and cocoa, powder lovers the choice
-                    of mild, sweet.
-                </p>
+            </div>
+
+            <div class="cake-item">
+
+                <img src="image/cake-2.png" alt="">
+
+                <div class="cacontent">
+
+                    <div class="catitle">
+                        <h3>CHOCOLATE GUINNESS CUPCAKES</h3>
+                        <span class="caline"></span>
+                        <span class="caprice">$33.00</span>
+                    </div>
+
+                    <p>
+                        The top of the cheesecake was covered in chocolate.
+                        Who wants to wake up from such a sweet dream.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cake-item">
+
+                <img src="image/cake-3.png" alt="">
+
+                <div class="content">
+
+                    <div class="catitle">
+                        <h3>BRICKLE CAKE</h3>
+                        <span class="caline"></span>
+                        <span class="caprice">$29.00</span>
+                    </div>
+
+                    <p>
+                        Brickle cake, chocolate taste the great passion of lovers.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cake-item">
+
+                <img src="image/cake-4.png" alt="">
+
+                <div class="cacontent">
+
+                    <div class="title">
+                        <h3>CHOCOLATE PARTICLE CAKE</h3>
+                        <span class="caline"></span>
+                        <span class="caprice">$29.00</span>
+                    </div>
+
+                    <p>
+                        Crispy cookie dough with chocolate chips and delicious flavor
+                        you will be addicted.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-        <div class="cake-item">
+        <!-- RIGHT SIDE -->
 
-            <img src="image/cake-2.png" alt="">
+        <div class="right">
 
-            <div class="cacontent">
+            <h1>CAKE</h1>
 
-                <div class="catitle">
-                    <h3>CHOCOLATE GUINNESS CUPCAKES</h3>
-                    <span class="caline"></span>
-                    <span class="caprice">$33.00</span>
-                </div>
-
-                <p>
-                    The top of the cheesecake was covered in chocolate.
-                    Who wants to wake up from such a sweet dream.
-                </p>
-
-            </div>
+            <img src="image/menu-6.png" class="main-image" alt="">
 
         </div>
 
-        <div class="cake-item">
-
-            <img src="image/cake-3.png" alt="">
-
-            <div class="content">
-
-                <div class="catitle">
-                    <h3>BRICKLE CAKE</h3>
-                    <span class="caline"></span>
-                    <span class="caprice">$29.00</span>
-                </div>
-
-                <p>
-                    Brickle cake, chocolate taste the great passion of lovers.
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="cake-item">
-
-            <img src="image/cake-4.png" alt="">
-
-            <div class="cacontent">
-
-                <div class="title">
-                    <h3>CHOCOLATE PARTICLE CAKE</h3>
-                    <span class="caline"></span>
-                    <span class="caprice">$29.00</span>
-                </div>
-
-                <p>
-                    Crispy cookie dough with chocolate chips and delicious flavor
-                    you will be addicted.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- RIGHT SIDE -->
-
-    <div class="right">
-
-        <h1>CAKE</h1>
-
-        <img src="image/menu-6.png" class="main-image" alt="">
-
-    </div>
-
-</section>
+    </section>
 
 
     <!-- footer -->

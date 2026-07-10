@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <style>
     .logodiv {
         background-image: url(image/main.jpg);
@@ -43,7 +44,7 @@
         margin: 0;
 
     }
-    
+
 
 
     .link {
@@ -56,8 +57,8 @@
 
     .link:hover {
         color: darkgoldenrod;
-        font-size: 20px; 
-       transition: 1s;
+        
+        transition: 1s;
     }
 
     .lo:hover {
@@ -112,13 +113,56 @@
         position: absolute;
         top: 50px;
         right: 300px;
+
+
     }
+
+
+    .img1 {
+        animation: moveBox 3s;
+    }
+
+    @keyframes moveBox {
+
+        0% {
+            transform: translateX(500px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+
 
     .img2 {
         position: absolute;
         top: 250px;
         right: 300px;
     }
+
+    .img2 {
+        animation: moveBox 3s;
+    }
+
+    @keyframes moveBox {
+
+        0% {
+            transform: translateX(500px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+
+
+
+    }
+
+
 
     .tree {
         display: flex;
@@ -301,6 +345,7 @@
     .coffee-kit h1 {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 22px;
+        padding-left: 40px;
         color: #111;
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -455,306 +500,318 @@
     .wifi {
         transform: rotate(45deg);
     }
+
+    .for-margin {
+        margin: auto 0;
+    }
 </style>
 
 <body>
-    <div class="logodiv">
+    <div class="for-margin">
+        <div class="logodiv">
 
-        <div>
-            <section class="move">
-                <div class="con">
-                    <section>
-                        <a class="lo" href=""> Find </a>
-                        <a class="lo" href=""> / Contacts</a>
-                    </section>
-
-                    <a href=""> <img src="image/logo.png" alt=""></a>
-
-                    <section class="ho">
-                        <a class="lo" href=""> Login / </a>
-                        <a class="lo" href=""> Register</a>
-                    </section>
-            </section>
-        </div>
-
-        <div class="list">
-            <ul class="nav-list">
-                <li><a class="link" href="index.html">HOME</a></li>
-                <li><a class="link" href="about.html">ABOUT</a></li>
-                <li><a class="link" href="menu.html">MENU</a></li>
-                <li><a class="link" href="galleries.html">GALLERIES</a></li>
-                <li><a class="link" href="event.html">NEWS & EVENTS</a></li>
-                <li><a class="link" href="contact.html">CONTACTS</a></li>
-            </ul>
-        </div>
-    </div>
-
-
-    <!--second sec-->
-
-
-    <div class="second">
-
-        <div class="tree">
-            <img src="image/tree1.jpg" alt="">
-        </div>
-
-
-
-        <div class="welhead">
-            <header>WELCOME TO OUR </header>
-            <header>RETATION</header>
-            <br>
             <div>
-                <aside>
-                    Cmspresso is the process that slowly and gradually releases the purest of essence. As tea leaves
-                    unravel and coffee patiently drips, it is the best representation of the making of tea and coffee.
-                    We want the tea and coffee from Cmspresso to express their many levels of character through a
-                    thoughtful and caring hand.
-                    <br>
-                    <br>
-                    Cmspresso is a concept that we wish to pass for-ward. Cmspresso means a healthy and positive outlook
-                    for the adopters of this great attitude.
-                </aside>
-            </div>
-        </div>
-        <img class="img2" src="image/info-img-2.png" alt="">
-        <div>
+                <section class="move">
+                    <div class="con">
+                        <section>
+                            <a class="lo" href=""> Find </a>
+                            <a class="lo" href=""> / Contacts</a>
+                        </section>
 
+                        <a href=""> <img src="image/logo.png" alt=""></a>
 
-        </div>
-        <div>
-            <img class="img1" src="image/info-img-1.png" alt="">
-        </div>
-
-    </div>
-
-
-    <!-- section 3 -->
-    <div>
-        <img class="sec3" src="image/sec3.jpg" alt="0">
-
-
-    </div>
-
-
-    <!-- section 4 -->
-
-    <div class="sec4">
-
-        <div class="beans4">
-            <img src="image/sec4.png" alt="">
-        </div>
-
-        <div class="grid">
-            <div>
-                <a href=""><img src="image/g1.jpg" alt=""></a>
-                <a href=""> <img src="image/g2.jpg" alt=""></a>
-
+                        <section class="ho">
+                            <a class="lo" href=""> Login / </a>
+                            <a class="lo" href=""> Register</a>
+                        </section>
+                </section>
             </div>
 
-            <div>
-                <a href=""><img src="image/g3.jpg" alt=""></a>
-                <a href=""> <img src="image/g4.jpg" alt=""></a>
-            </div>
-            <div>
-
-                <a href=""> <img src="image/g5.jpg" alt=""></a>
-                <a href=""><img src="image/g6.jpg" alt=""></a>
+            <div class="list">
+                <ul class="nav-list">
+                    <li><a class="link" href="index.html">HOME</a></li>
+                    <li><a class="link" href="about.html">ABOUT</a></li>
+                    <li><a class="link" href="menu.html">MENU</a></li>
+                    <li><a class="link" href="galleries.html">GALLERIES</a></li>
+                    <li><a class="link" href="event.html">NEWS & EVENTS</a></li>
+                    <li><a class="link" href="contact.html">CONTACTS</a></li>
+                </ul>
             </div>
         </div>
 
-        <div>
-            <header class="latestup">LATEST UPDATE</header>
+
+        <!--second sec-->
+
+
+        <div class="second">
+
+            <div class="tree">
+                <img src="image/tree1.jpg" alt="">
+            </div>
+
+
+
+            <div class="welhead">
+                <header>WELCOME TO OUR </header>
+                <header>RETATION</header>
+                <br>
+                <div>
+                    <aside>
+                        Cmspresso is the process that slowly and gradually releases the purest of essence. As tea leaves
+                        unravel and coffee patiently drips, it is the best representation of the making of tea and
+                        coffee.
+                        We want the tea and coffee from Cmspresso to express their many levels of character through a
+                        thoughtful and caring hand.
+                        <br>
+                        <br>
+                        Cmspresso is a concept that we wish to pass for-ward. Cmspresso means a healthy and positive
+                        outlook
+                        for the adopters of this great attitude.
+                    </aside>
+                </div>
+            </div>
+            <img class="img2" src="image/info-img-2.png" alt="">
+            <div>
+
+
+            </div>
+            <div>
+                <img class="img1" src="image/info-img-1.png" alt="">
+            </div>
+
         </div>
 
-        <div class="minisec">
-            <div>
-                <img class="photo1" src="image/p1.png" alt="">
 
-                <article class="lu">
-                    <header><a href="">HAPPY HOUR, BETWEEN 4PM & 5PM</a></header>
+        <!-- section 3 -->
+        <div>
+            <img class="sec3" src="image/sec3.jpg" alt="0">
+
+
+        </div>
+
+
+        <!-- section 4 -->
+
+        <div class="sec4">
+
+            <div class="beans4">
+                <img src="image/sec4.png" alt="">
+            </div>
+
+            <div class="grid">
+                <div>
+                    <a href=""><img src="image/g1.jpg" alt=""></a>
+                    <a href=""> <img src="image/g2.jpg" alt=""></a>
+
+                </div>
+
+                <div class="g">
+                    <a href=""><img src="image/g3.jpg" alt=""></a>
+                    <a href=""> <img src="image/g4.jpg" alt=""></a>
+                </div>
+                <div class="g">
+
+                    <a href=""> <img src="image/g5.jpg" alt=""></a>
+                    <a href=""><img src="image/g6.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div>
+                <header class="latestup">LATEST UPDATE</header>
+            </div>
+
+            <div class="minisec">
+                <div>
+                    <img class="photo1" src="image/p1.png" alt="">
+
+                    <article class="lu">
+                        <header><a href="">HAPPY HOUR, BETWEEN 4PM & 5PM</a></header>
+                        In specialty coffee culture an ability to properly brew coffee is summing it all up. In one cup
+                        of
+                        coffee we bring together efforts of all of those who worked o...
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="minisec2">
+                <article class="lu2">
+                    <header><a href="">BREW COFFEE IS SUMMING IT ALL UP</a></header>
                     In specialty coffee culture an ability to properly brew coffee is summing it all up. In one cup of
                     coffee we bring together efforts of all of those who worked o...
                 </article>
+
+                <img class="photo2" src="image/p2.png" alt="">
+            </div>
+        </div>
+
+
+
+        <!-- section 5 -->
+        <div class="sec5">
+            <div class="text5">
+                <header>Do you want to Retation the video recipe?</header>
+                <aside>Coffee is a ritual, a small treat in the morning, “fuel”, a break, chat, affair that makes up our
+                    lives. Making the coffee better, we make our lives better.
+
+                </aside>
             </div>
 
-        </div>
 
-        <div class="minisec2">
-            <article class="lu2">
-                <header><a href="">BREW COFFEE IS SUMMING IT ALL UP</a></header>
-                In specialty coffee culture an ability to properly brew coffee is summing it all up. In one cup of
-                coffee we bring together efforts of all of those who worked o...
-            </article>
+            <div><img src="image/powder.png" alt=""></div>
 
-            <img class="photo2" src="image/p2.png" alt="">
-        </div>
-    </div>
+            <div> <iframe class="y1" width="560" height="315"
+                    src="https://www.youtube.com/embed/aBLYSO0DSVI?si=qbBRgFBFSudlH7Bn" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+                <iframe class="y1" width="560" height="315"
+                    src="https://www.youtube.com/embed/D-tjyNq7drk?si=OP31PibNHC0OENDf" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-    <!-- section 5 -->
-    <div class="sec5">
-        <div class="text5">
-            <header>Do you want to Retation the video recipe?</header>
-            <aside>Coffee is a ritual, a small treat in the morning, “fuel”, a break, chat, affair that makes up our
-                lives. Making the coffee better, we make our lives better.
-
-            </aside>
-        </div>
-
-
-        <div><img src="image/powder.png" alt=""></div>
-
-        <div> <iframe class="y1" width="560" height="315"
-                src="https://www.youtube.com/embed/aBLYSO0DSVI?si=qbBRgFBFSudlH7Bn" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <iframe class="y1" width="560" height="315"
-                src="https://www.youtube.com/embed/D-tjyNq7drk?si=OP31PibNHC0OENDf" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-        </div>
-    </div>
-
-    <!-- sec 6 -->
-
-    <div class="sec6">
-
-        <img class="lastimg" src="image/last.png" alt="">
-
-        <div class="coffee-kit">
-
-            <h1>GET YOUR BULLETPROOF COFFEE MAKING KIT</h1>
-
-            <ul>
-                <li>1 cup unsweetened cocoa powder</li>
-                <li>1/2 cup butter, cut into 1-inch pieces</li>
-                <li>1 1/4 cups granulated sugar</li>
-                <li>1/2 cup firmly packed dark brown sugar</li>
-                <li>1 1/4 tsp baking soda</li>
-                <li>Add a Klean Kanteen Insulated Coffee Flask / Shaker & a Cafe Cap</li>
-            </ul>
-
-
-        </div>
-    </div>
-    <header class="line">“The easiest and most convenient way I have used in making Bulletproof coffee. We use it very
-        day.”</header>
-
-
-
-
-    <!-- footer -->
-
-    <footer>
-
-        <div class="footer-container">
-
-            <!-- About -->
-            <div class="footer-box">
-                <h2>ABOUT US</h2>
-
-                <p>
-                    Anim pariatur cliche reprehenderit,
-                    enim eiusmod high life accusamus terry
-                    richardson ad squid.
-                </p>
-
-                <div class="contact">
-                    <i class="fa-solid fa-envelope"></i>
-                    <img src="image/icons8-mail-24.png" alt="">
-                    <span>hello@mtheme.org</span>
-                </div>
-
-                <div class="contact">
-                    <i class="fa-solid fa-phone"></i>
-                    <img src="image/icons8-phone-30.png" alt="">
-                    <span>+(84)123456789</span>
-                </div>
-
-                <div class="contact">
-                    <i class="fa-solid fa-house"></i>
-                    <img src="image/icons8-home-30.png" alt="">
-                    <span>
-                        198 West 21th Street, Suite 721<br>
-                        New York NY 10010
-                    </span>
-                </div>
 
             </div>
+        </div>
 
-            <!-- Business -->
+        <!-- sec 6 -->
 
-            <div class="footer-box">
+        <div class="sec6">
 
-                <h2>FOR BUSINESS</h2>
+            <img class="lastimg" src="image/last.png" alt="">
+
+            <div class="coffee-kit">
+
+                <h1>GET YOUR BULLETPROOF COFFEE MAKING KIT</h1>
 
                 <ul>
-                    <li><a href="#">Office Coffee</a></li>
-                    <li><a href="#">Food Service</a></li>
-                    <li><a href="#">Affiliate Program</a></li>
+                    <li>1 cup unsweetened cocoa powder</li>
+                    <li>1/2 cup butter, cut into 1-inch pieces</li>
+                    <li>1 1/4 cups granulated sugar</li>
+                    <li>1/2 cup firmly packed dark brown sugar</li>
+                    <li>1 1/4 tsp baking soda</li>
+                    <li>Add a Klean Kanteen Insulated Coffee Flask / Shaker & a Cafe Cap</li>
                 </ul>
 
-            </div>
-
-            <!-- Newsletter -->
-
-            <div class="footer-box">
-
-                <h2>NEWSLETTER</h2>
-
-                <p>
-                    If you world like sign-up to the origin
-                    newsletter,please enter your email
-                    address below
-                </p>
-
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-
-                <button>SUBSCRIBE</button>
 
             </div>
+        </div>
+        <header class="line">“The easiest and most convenient way I have used in making Bulletproof coffee. We use it
+            very
+            day.”</header>
 
-            <!-- Social -->
 
-            <div class="footer-box">
 
-                <h2>FOLLOW US</h2>
 
-                <p>
-                    Follow Origin on the following social
-                    network sites.
-                </p>
+        <!-- footer -->
 
-                <div class="social">
+        <footer>
 
-                    <a href="#"><i class="fab fa-facebook-f"> <img src="image/icons8-facebook-30.png" alt=""></i></a>
+            <div class="footer-container">
 
-                    <a href="#"><i class="fab fa-twitter"> <img src="image/icons8-twitter-bird-30.png" alt=""></i></a>
+                <!-- About -->
+                <div class="footer-box">
+                    <h2>ABOUT US</h2>
 
-                    <a href="#"><i class="fab fa-google-plus-g"> <img class="google"
-                                src="image/icons8-google-plus-50.png" alt=""></i></a>
+                    <p>
+                        Anim pariatur cliche reprehenderit,
+                        enim eiusmod high life accusamus terry
+                        richardson ad squid.
+                    </p>
 
-                    <a href="#"><i class="fas fa-rss"></i> <img class="wifi" src="image/icons8-wifi-30.png" alt=""></a>
+                    <div class="contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <img src="image/icons8-mail-24.png" alt="">
+                        <span>hello@mtheme.org</span>
+                    </div>
+
+                    <div class="contact">
+                        <i class="fa-solid fa-phone"></i>
+                        <img src="image/icons8-phone-30.png" alt="">
+                        <span>+(84)123456789</span>
+                    </div>
+
+                    <div class="contact">
+                        <i class="fa-solid fa-house"></i>
+                        <img src="image/icons8-home-30.png" alt="">
+                        <span>
+                            198 West 21th Street, Suite 721<br>
+                            New York NY 10010
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Business -->
+
+                <div class="footer-box">
+
+                    <h2>FOR BUSINESS</h2>
+
+                    <ul>
+                        <li><a href="#">Office Coffee</a></li>
+                        <li><a href="#">Food Service</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Newsletter -->
+
+                <div class="footer-box">
+
+                    <h2>NEWSLETTER</h2>
+
+                    <p>
+                        If you world like sign-up to the origin
+                        newsletter,please enter your email
+                        address below
+                    </p>
+
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+
+                    <button>SUBSCRIBE</button>
+
+                </div>
+
+                <!-- Social -->
+
+                <div class="footer-box">
+
+                    <h2>FOLLOW US</h2>
+
+                    <p>
+                        Follow Origin on the following social
+                        network sites.
+                    </p>
+
+                    <div class="social">
+
+                        <a href="#"><i class="fab fa-facebook-f"> <img src="image/icons8-facebook-30.png"
+                                    alt=""></i></a>
+
+                        <a href="#"><i class="fab fa-twitter"> <img src="image/icons8-twitter-bird-30.png"
+                                    alt=""></i></a>
+
+                        <a href="#"><i class="fab fa-google-plus-g"> <img class="google"
+                                    src="image/icons8-google-plus-50.png" alt=""></i></a>
+
+                        <a href="#"><i class="fas fa-rss"></i> <img class="wifi" src="image/icons8-wifi-30.png"
+                                alt=""></a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </footer>
+        </footer>
 
 
-
+    </div>
 </body>
 
 </html>

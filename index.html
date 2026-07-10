@@ -57,7 +57,7 @@
 
     .link:hover {
         color: darkgoldenrod;
-        
+
         transition: 1s;
     }
 
@@ -504,8 +504,75 @@
     .for-margin {
         margin: auto 0;
     }
-</style>
 
+    .minisec {
+        animation: move4 3s;
+    }
+
+    @keyframes move4 {
+        from {
+            transform: translateX(200px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    .minisec2 {
+        animation: move5 3s;
+    }
+
+    @keyframes move5 {
+        from {
+            transform: translateX(-200px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+
+    .powder {
+        animation: rotate 3s;
+    }
+  @keyframes rotate {
+        from {
+            transform: rotate(-90deg)
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+    .yt {
+        animation: move6 3s;
+    }
+
+    @keyframes move6 {
+        from {
+            transform: translateX(-200px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+     .text5 {
+        animation: move6 3s;
+    }
+
+    @keyframes move6 {
+        from {
+            transform: translateX(200px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+</style>
+ 
 <body>
     <div class="for-margin">
         <div class="logodiv">
@@ -658,9 +725,10 @@
             </div>
 
 
-            <div><img src="image/powder.png" alt=""></div>
+            <div class="powder"><img src="image/powder.png" alt=""></div>
 
-            <div> <iframe class="y1" width="560" height="315"
+            <div class="yt">
+                <iframe class="y1" width="560" height="315"
                     src="https://www.youtube.com/embed/aBLYSO0DSVI?si=qbBRgFBFSudlH7Bn" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -283,6 +283,165 @@
         transform: rotate(45deg);
     }
     hr{width: 80%;}
+
+    /* tab */
+    @media (max-width:1024px){
+
+    .logodiv{
+        height:auto;
+        padding:30px 20px;
+    }
+
+    .con{
+        flex-direction:column;
+        gap:20px;
+        transform:none;
+    }
+
+    .list{
+        transform:none;
+        margin-top:25px;
+    }
+
+    .nav-list{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .blog{
+        width:95%;
+        gap:30px;
+    }
+
+    .blog-image img{
+        height:280px;
+    }
+
+    .day{
+        font-size:55px;
+    }
+
+    .month{
+        font-size:24px;
+    }
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    footer{
+        height:auto;
+        padding:40px 30px;
+    }
+}
+
+/* phone */
+@media (max-width:767px){
+
+    .logodiv{
+        height:auto;
+        padding:20px 15px;
+    }
+
+    .con{
+        flex-direction:column;
+        gap:15px;
+        transform:none;
+        text-align:center;
+    }
+
+    .con img{
+        width:160px;
+    }
+
+    .list{
+        transform:none;
+        margin-top:20px;
+    }
+
+    .nav-list{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .link{
+        font-size:15px;
+    }
+
+    .blog{
+        width:95%;
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .blog-image{
+        width:100%;
+    }
+
+    .blog-image img{
+        width:100%;
+        height:auto;
+    }
+
+    .blog-content{
+        width:100%;
+    }
+
+    .date{
+        justify-content:center;
+    }
+
+    .day{
+        font-size:50px;
+    }
+
+    .month{
+        font-size:22px;
+    }
+
+    .blog-content h2{
+        font-size:22px;
+        text-align:center;
+    }
+
+    .blog-content p,
+    .meta{
+        text-align:center;
+    }
+
+    .line{
+        width:100%;
+    }
+
+    footer{
+        height:auto;
+        padding:30px 20px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-box{
+        text-align:center;
+    }
+
+    .contact{
+        justify-content:center;
+    }
+
+    .social{
+        justify-content:center;
+    }
+
+    hr{
+        width:95%;
+    }
+}
 </style>
 <body>
     <div class="logodiv">

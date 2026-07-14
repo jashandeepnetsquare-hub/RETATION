@@ -401,6 +401,7 @@
             transform: scale(100%);
         }
     }
+
     .promise-text {
         animation: move 3s;
     }
@@ -415,7 +416,7 @@
         }
     }
 
-     .promise-text {
+    .promise-text {
         animation: move 3s;
     }
 
@@ -428,7 +429,8 @@
             transform: translateX(0)
         }
     }
-     .lastimg1 {
+
+    .lastimg1 {
         animation: move 4s;
     }
 
@@ -442,7 +444,7 @@
         }
     }
 
-      .lastimg2 {
+    .lastimg2 {
         animation: move 2.5s;
     }
 
@@ -456,8 +458,8 @@
         }
     }
 
-     .sec5 {
-        animation: move5 2.5s ;
+    .sec5 {
+        animation: move5 2.5s;
     }
 
     @keyframes move5 {
@@ -465,15 +467,234 @@
             transform: translateX(-2000px)
         }
 
-       
-        
 
-    100% {
+
+
+        100% {
             transform: translateX(00)
         }
     }
 
+    /* laptop */
+    @media (min-width:1200px) {
+        body {
+            overflow-x: hidden;
+        }
+    }
 
+    /* tab */
+    @media (max-width:1199px) {
+
+        .login {
+            flex-direction: column;
+            gap: 20px;
+            transform: none;
+            padding: 20px;
+        }
+
+        .nav-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            transform: none;
+            margin-top: 20px;
+        }
+
+        .aboutus {
+            transform: translateY(-20px);
+            padding: 40px 0;
+        }
+
+        .second,
+        .sec3,
+        .sec4,
+        .sec6 {
+            height: auto;
+            padding: 60px 20px;
+        }
+
+        .welhead,
+        .tree,
+        .img1,
+        .img2,
+        .cm,
+        .cup,
+        .promise-text,
+        .lastimg1,
+        .lastimg2,
+        .sec6 aside {
+            position: static;
+        }
+
+        .welhead {
+            text-align: center;
+        }
+
+        .welhead aside,
+        .sec3 aside,
+        .promise-text article,
+        .sec6 aside article {
+            width: 100%;
+        }
+
+        .tree,
+        .img1,
+        .img2,
+        .cm,
+        .cup,
+        .lastimg1,
+        .lastimg2 {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+        }
+
+        .sec3 aside,
+        .promise-text,
+        .sec6 aside {
+            text-align: center;
+        }
+
+        .sec3 aside {
+            width: 70%;
+        }
+
+        .sec3 {
+            display: flex;
+            align-content: center;
+        }
+
+        .cm {
+            opacity: 30%;
+        }
+
+        .sec5 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .sec5 img {
+            width: 100%;
+            max-width: 280px;
+        }
+footer{height: 100%;}
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* phone */
+    @media (max-width:767px) {
+
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            height: auto;
+            padding: 20px;
+        }
+
+        .login {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .aboutus {
+            font-size: 28px;
+            padding: 30px 0;
+        }
+
+        .welhead header,
+        .promise-text header,
+        .sec6 h1,
+        .sec3 h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .welhead aside,
+        .promise-text article,
+        .sec3 aside,
+        .sec6 aside article {
+            width: 100%;
+            text-align: center;
+        }
+
+        .tree,
+        .img1,
+        .img2,
+        .cm,
+        .cup,
+        .lastimg1,
+        .lastimg2 {
+            width: 100%;
+        }
+
+        .sec3 {
+            display: flex;
+
+            justify-content: center;
+        }
+
+        .sec3 aside {
+            width: 70%;
+        }
+
+        .cm {
+            opacity: 30%;
+        }
+
+        .sec5 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 30px 20px;
+        }
+
+        .lastimg1,
+        .lastimg2 {
+            width: 50%;
+        }
+
+        .sec5 img {
+            width: 100%;
+        }
+
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+
+        footer {
+            height: auto;
+            padding: 40px 20px;
+        }
+
+        .footer-box {
+            text-align: center;
+        }
+
+        .social {
+            justify-content: center;
+        }
+
+    }
 </style>
 
 <body>
